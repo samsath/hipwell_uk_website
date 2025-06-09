@@ -9,6 +9,24 @@ export enum BackgroundColor {
   Filled = 'filled'
 }
 
+export const asBackgroundColour = (input: SelectField): BackgroundColor => {
+  switch (input) {
+    case 'white':
+      return BackgroundColor.white;
+    case 'green':
+      return BackgroundColor.green;
+    case 'blue':
+      return BackgroundColor.blue;
+    case 'orange':
+      return BackgroundColor.orange;
+    case 'black':
+      return BackgroundColor.black;
+    default:
+      return BackgroundColor.white;
+  }
+};
+
+
 export const getBodyColour = (baseColour: string) => {
   switch (baseColour) {
     case 'white':
@@ -22,12 +40,12 @@ export const getBodyColour = (baseColour: string) => {
 
 export const getBackgroundColour = (baseColour: string) => {
   switch (baseColour) {
-    case 'grey':
-      return 'bg-grey';
-    case 'pink':
-      return 'bg-pink';
-    case 'yellow':
-      return 'bg-yellow';
+    case 'green':
+      return 'bg-electric-green';
+    case 'blue':
+      return 'bg-cyber-blue';
+    case 'orange':
+      return 'bg-bold-orange';
     case 'white':
       return 'bg-white';
     case 'black':

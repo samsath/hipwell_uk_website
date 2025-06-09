@@ -1,0 +1,22 @@
+---
+import type * as prismic from '@prismicio/client';
+import type { BlogPostDocumentDataBodySlice, HomepageDocumentDataBodySlice } from '../models/types.generated';
+import SliceRegistry from './slice-registry.astro';
+
+interface Props {
+  slices: prismic.SliceZone<HomepageDocumentDataBodySlice | BlogPostDocumentDataBodySlice>;
+}
+
+const { slices } = Astro.props;
+---
+
+{
+  !!slices.length && (
+    <>
+      {slices?.map((item: HomepageDocumentDataBodySlice | BlogPostDocumentDataBodySlice) => {
+        if (!item) return null;
+        return <SliceRegistry item={item} />;
+      })}
+    </>
+  )
+}

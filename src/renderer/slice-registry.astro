@@ -1,0 +1,15 @@
+---
+import {
+  ServiceGrid,
+  serviceGridTransformer
+} from '../components';
+
+const { item } = Astro.props;
+const sliceType = item.slice_type;
+
+const render = (sliceKey: string): boolean => sliceType === sliceKey;
+---
+
+<>
+  {render('servicegrid') && <ServiceGrid {...serviceGridTransformer(item)} />}
+</>

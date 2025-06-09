@@ -14,4 +14,5 @@ const header = homePageSEO(page);
 <!doctype html>
 <Layout header={SITE_TITLE} description={SITE_DESCRIPTION} seo={header}>
   <Hero header={body.header} tagline={body.tagline} description={body.description} />
+  <SliceRender slices={body.body || []} />
 </Layout>
