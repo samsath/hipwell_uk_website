@@ -53,7 +53,11 @@ const { header, description, seo } = Astro.props;
   </head>
   <body class='max-w-[105rem] mx-auto lg:shadow-2xl lg:shadow-pink'>
     <Header />
-    <main class='relative flex flex-1 flex-col'>
+    <main class='bg-white text-black overflow-x-hidden'>
+      <!-- Background shapes -->
+      <div class="bg-shape w-[300px] h-[300px] bg-electric-green rounded-full top-[10%] right-[-10%] animate-float"></div>
+      <div class="bg-shape w-[200px] h-[400px] bg-cyber-blue top-[40%] left-[-5%] clip-triangle animate-float-reverse"></div>
+      <div class="bg-shape w-[250px] h-[250px] bg-bold-orange bottom-[20%] right-[5%] rotate-45 animate-float-slow"></div>
       <slot />
     </main>
     <Footer />

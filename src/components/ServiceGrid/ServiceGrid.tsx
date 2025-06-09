@@ -11,7 +11,7 @@ export const ServiceGrid = (input: ServiceGridType) => {
   const backgroundColour = getBackgroundColour(background);
 
   return (
-    <section className={`py-32 relative ${backgroundColour} text-black`}>
+    <section className={`py-20 pt-32 relative ${backgroundColour} text-black`}>
       <div className="container max-w-6xl mx-auto px-8">
         <h2
           className="text-5xl md:text-6xl lg:text-7xl font-black text-center mb-16 uppercase tracking-tight text-shadow-brutal-black">
