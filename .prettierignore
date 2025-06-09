@@ -1,0 +1,29 @@
+# Ignore directories
+node_modules/
+build/
+.github/
+
+# Ignore specific files
+.gitignore
+.tool-versions
+.prettierignore
+.eslintrc.js
+.dockerignore
+*.md
+*.txt
+robots.js
+yarn.lock
+.yarn
+src/global.css
+.eslintrc
+.husky/
+.storybook/styles.css
+.dockerignore
+
+# Ignore specific directories
+public/
+
+# CMS models
+src/models/
+
+nginx/

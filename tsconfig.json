@@ -1,14 +1,16 @@
 {
   "extends": "astro/tsconfigs/strict",
-  "include": [
-    ".astro/types.d.ts",
-    "**/*"
-  ],
-  "exclude": [
-    "dist"
-  ],
+  "include": [".astro/types.d.ts", "**/*.ts", "**/*.tsx", "**/*.astro", "./vitest.setup.ts"],
+  "exclude": ["dist", "node_modules", "sst.config.ts"],
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "strictNullChecks": true,
     "jsx": "react-jsx",
-    "jsxImportSource": "react"
+    "jsxImportSource": "react",
+    "types": ["@testing-library/jest-dom", "node"],
+    "plugins": [{ "name": "@astrojs/ts-plugin" }]
   }
 }

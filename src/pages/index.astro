@@ -1,11 +1,18 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { getHomepage } from '../helpers/client';
+import Hero from '../components/Hero.astro';
+import { homePageMain, homePageSEO } from '../models/transformers/HomePage.transformer';
+import SliceRender from '../renderer/slice-renderer.astro';
 import Layout from '../layouts/Layout.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const page = await getHomepage();
+const body = homePageMain(page);
+const header = homePageSEO(page);
 ---
 
-<Layout>
-	<Welcome />
+<!doctype html>
+<Layout header={SITE_TITLE} description={SITE_DESCRIPTION} seo={header}>
+  <Hero firstHeader={body.firstHeader} secondHeader={body.secondHeader} />
+  <SliceRender slices={body.body || []} />
 </Layout>
