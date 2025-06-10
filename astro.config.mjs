@@ -8,7 +8,7 @@ import aws from 'astro-sst';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://example.com',
+  site: 'https://www.hipwell.uk',
   adapter: aws({
     responseMode: 'buffer'
   }),

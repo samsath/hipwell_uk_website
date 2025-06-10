@@ -9,21 +9,21 @@
     "astro:sync": "astro sync",
     "build": "astro build",
     "build-storybook": "storybook build",
-    "check": "yarn lint:eslint && yarn lint:prettier && yarn test",
+    "check": "npm run lint:eslint && npm run  lint:prettier && npm run  test",
     "chromatic": "npx chromatic --project-token=chpt_b8a60f12428f1df",
     "dev": "astro dev",
-    "fix": "yarn fix:eslint && yarn fix:prettier",
+    "fix": "npm run  fix:eslint && npm run  fix:prettier",
     "fix:eslint": "eslint . --fix --ext ts,tsx ",
     "fix:prettier": "prettier --write \"**/*.*\"",
     "generate-types": "prismic-ts-codegen",
-    "lint": "yarn lint:eslint && yarn fix:prettier",
+    "lint": "npm run  lint:eslint && npm run  fix:prettier",
     "lint:eslint": "eslint . --ext ts,tsx",
     "lint:prettier": "prettier --check \"**/*.*\"",
     "prepare": "husky",
     "preview": "astro preview",
     "storybook": "storybook dev -p 6006",
     "sync": "astro sync",
-    "test": "yarn vitest --run",
+    "test": "npm run  vitest --run",
     "test:ui": "vitest --ui",
     "test:watch": "vitest --watch",
     "tsc": "tsc --noEmit",
@@ -110,7 +110,6 @@
     ],
     "*.{ts,tsx,js}": "eslint --cache --fix --max-warnings 0"
   },
-  "packageManager": "yarn@4.9.2",
   "eslintConfig": {
     "extends": [
       "plugin:storybook/recommended"

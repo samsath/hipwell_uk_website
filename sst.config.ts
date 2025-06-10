@@ -10,7 +10,7 @@ export default $config({
       home: "aws",
       providers: {
         aws: {
-          region: "eu-west-1",
+          region: "eu-west-2",
         },
       }
     };

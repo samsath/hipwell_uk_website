@@ -6,7 +6,7 @@ export const TextBlock = (input: TextBlockType) => {
   if (!result.success) {
     return <></>;
   }
-  const { header, body, hasBorder, background } = result.data;
+  const { header, body, background } = result.data;
   const backgroundColour = getBackgroundColour(background);
 
   return (
