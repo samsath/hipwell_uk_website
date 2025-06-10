@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Sam Hipwell - Software Consultant & Architect</title>
     <style>
         * {
@@ -20,7 +23,7 @@
         }
 
         body {
-            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: 'Josefin Sans', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             color: var(--black);
             background: var(--white);
@@ -79,6 +82,7 @@
         }
 
         .hero h1 {
+            font-family: "Raleway", sans-serif;
             font-size: clamp(4rem, 10vw, 8rem);
             font-weight: 900;
             margin-bottom: 1rem;
@@ -525,47 +529,47 @@
             .container {
                 padding: 0 1rem;
             }
-            
+
             .hero {
                 padding: 4rem 0;
             }
-            
+
             .section {
                 padding: 4rem 0;
             }
-            
+
             .services-grid {
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
-            
+
             .service-card {
                 padding: 2rem;
             }
-            
+
             .contact-content {
                 padding: 2rem;
                 transform: rotate(0deg);
             }
-            
+
             .philosophy {
                 transform: rotate(0deg);
                 margin: 2rem 0;
             }
-            
+
             .hero h1 .name-sam,
             .hero h1 .name-hipwell {
                 text-shadow: 4px 4px 0 var(--black);
             }
-            
+
             .hero .subtitle {
                 text-shadow: 2px 2px 0 var(--black);
             }
-            
+
             .section-title {
                 text-shadow: 3px 3px 0 var(--black);
             }
-            
+
             .section-title.white-shadow {
                 text-shadow: 3px 3px 0 var(--white);
             }
@@ -601,7 +605,7 @@
             <h2 class="section-title">What I Do</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>🏗 Fractional CTO & Technical Strategy</h3>
+                    <h3>Fractional CTO & Technical Strategy</h3>
                     <p>I work with early-stage founders to define their product roadmaps, set technical direction, and build high-performing Minimum Viable Products (MVPs) that unlock market traction. Do you need a sounding board or a hands-on architect? I do both.</p>
                 </div>
                 <div class="service-card">
@@ -625,7 +629,7 @@
                     <p>I build cloud-native systems with Terraform, Docker, and modern CI/CD pipelines across AWS, GCP and more. Your infrastructure should scale, self-heal, and not be a bottleneck.</p>
                 </div>
             </div>
-            
+
             <div class="philosophy">
                 <h3>The best tool for the job</h3>
                 <p>A strong believer in working out the business needs first, then using these insights to pick the best tools and framework to make the biggest impact.</p>
@@ -684,7 +688,7 @@
                 <h2>Let's Work Together</h2>
                 <p>I work with founders, product teams, and social ventures who are building systems that matter—e-commerce, AI, telco, charity, and beyond.</p>
                 <p>Whether you need architecture direction, a technical partner to build your MVP or a seasoned engineer who can move from planning to production—I'd love to help.</p>
-                
+
                 <form class="contact-form" onsubmit="handleSubmit(event)">
                     <div class="form-group">
                         <label for="name">Name</label>
@@ -700,7 +704,7 @@
                     </div>
                     <button type="submit" class="submit-btn">Send Message</button>
                 </form>
-                
+
                 <a href="mailto:sam@hipwell.uk" class="email-link">sam@hipwell.uk</a>
             </div>
         </div>
@@ -709,11 +713,11 @@
     <script>
         function handleSubmit(event) {
             event.preventDefault();
-            
+
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
             const project = document.getElementById('project').value;
-            
+
             // Create mailto link with form data
             const subject = encodeURIComponent(`New Project Inquiry from ${name}`);
             const body = encodeURIComponent(`Hi Sam,
@@ -727,7 +731,7 @@ ${project}
 
 Best regards,
 ${name}`);
-            
+
             window.location.href = `mailto:sam@hipwell.uk?subject=${subject}&body=${body}`;
         }
 
@@ -759,7 +763,7 @@ ${name}`);
             card.addEventListener('mouseenter', () => {
                 card.style.transform = 'translateY(-10px) rotate(2deg)';
             });
-            
+
             card.addEventListener('mouseleave', () => {
                 card.style.transform = 'translateY(0) rotate(0deg)';
             });

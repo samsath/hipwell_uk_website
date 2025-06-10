@@ -35,7 +35,7 @@ const { header, description, seo } = Astro.props;
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- Primary Meta Tags -->
     <meta property='og:title' content={seo.og_title} />
@@ -53,11 +53,7 @@ const { header, description, seo } = Astro.props;
   </head>
   <body class='max-w-[105rem] mx-auto lg:shadow-2xl lg:shadow-pink'>
     <Header />
-    <main class='bg-white text-black overflow-x-hidden'>
-      <!-- Background shapes -->
-      <div class="bg-shape w-[300px] h-[300px] bg-electric-green rounded-full top-[10%] right-[-10%] animate-float"></div>
-      <div class="bg-shape w-[200px] h-[400px] bg-cyber-blue top-[40%] left-[-5%] clip-triangle animate-float-reverse"></div>
-      <div class="bg-shape w-[250px] h-[250px] bg-bold-orange bottom-[20%] right-[5%] rotate-45 animate-float-slow"></div>
+    <main class='bg-white text-black overflow-x-hidden font-display'>
       <slot />
     </main>
     <Footer />

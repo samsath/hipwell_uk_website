@@ -13,6 +13,10 @@ const header = homePageSEO(page);
 
 <!doctype html>
 <Layout header={SITE_TITLE} description={SITE_DESCRIPTION} seo={header}>
+  <!-- Background shapes -->
+  <div class="bg-shape w-[300px] h-[300px] bg-electric-green rounded-full top-[10%] right-[-10%] animate-float"></div>
+  <div class="bg-shape w-[200px] h-[400px] bg-cyber-blue top-[40%] left-[-5%] clip-triangle animate-float-reverse"></div>
+  <div class="bg-shape w-[250px] h-[250px] bg-bold-orange bottom-[20%] right-[5%] rotate-45 animate-float-slow"></div>
   <Hero header={body.header} tagline={body.tagline} description={body.description} />
   <SliceRender slices={body.body || []} />
 </Layout>

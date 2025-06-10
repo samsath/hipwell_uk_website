@@ -10,6 +10,6 @@ export const Line = (input: LineType) => {
   const backgroundColour = getBackgroundColour(colour);
 
   return (
-    <div className={`my-32 h-2 w-full ${backgroundColour}`}></div>
-  )
-}
+    <div className={`accent-line ${backgroundColour}`}></div>
+  );
+};

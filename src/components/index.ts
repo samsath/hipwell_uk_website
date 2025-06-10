@@ -6,3 +6,6 @@ export { textBlockTransformer } from './TextBlock/TextBlock.transformer';
 
 export { Line } from './Line/Line';
 export { lineTransformer } from './Line/Line.transformer.ts';
+
+export { ListGrid } from './ListGrid/ListGrid';
+export { listGridTransformer } from './ListGrid/ListGrid.transformer';

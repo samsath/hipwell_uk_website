@@ -7,7 +7,8 @@ module.exports = {
         'bold-orange': '#ff8004',
       },
       fontFamily: {
-        'display': ['Comfortaa', 'SF Pro Display', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'sans-serif'],
+        'display': ['Josefin Sans', 'SF Pro Display', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'sans-serif'],
+        'header': ['Raleway', 'SF Pro Display', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'sans-serif']
       },
       animation: {
         'float': 'float 8s ease-in-out infinite',
