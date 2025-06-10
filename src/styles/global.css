@@ -421,6 +421,13 @@ body {
     text-align: left;
 }
 
+.form-error {
+    color: var(--orange);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
 .form-group label {
     display: block;
     margin-bottom: 0.5rem;
@@ -543,6 +550,11 @@ body {
 .bg-black{
     background-color: var(--black);
 }
+
+.color-bold-orange{
+    color: var(--orange);
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

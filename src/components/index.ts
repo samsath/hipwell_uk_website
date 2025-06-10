@@ -9,3 +9,6 @@ export { lineTransformer } from './Line/Line.transformer.ts';
 
 export { ListGrid } from './ListGrid/ListGrid';
 export { listGridTransformer } from './ListGrid/ListGrid.transformer';
+
+export { ContactForm } from './ContactForm/ContactForm';
+export { contactFormTransformer } from './ContactForm/ContactForm.transformer';

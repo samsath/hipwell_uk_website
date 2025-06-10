@@ -2,7 +2,6 @@ import { ListGridSchema, type ListGridType } from '@/components/ListGrid/ListGri
 import { getBackgroundColour } from '@/helpers/colours.ts';
 
 export const ListGrid = (input: ListGridType) => {
-  console.log(input);
   const result = ListGridSchema.safeParse(input);
   if (!result.success) {
     return <></>;
